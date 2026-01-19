@@ -2,6 +2,17 @@
 
 set -ouex pipefail
 
+#### Add repo ####
+
+### Jottacloud ###
+tee  /etc/yum.repos.d/JottaCLI.repo <<'EOF'
+[jotta-cli]
+name=Jottacloud CLI
+baseurl=https://repo.jotta.cloud/redhat
+gpgcheck=1
+gpgkey=https://repo.jotta.cloud/public.gpg
+EOF
+
 ### Install packages
 
 # Packages can be installed from any enabled yum repo on the image.
@@ -10,7 +21,7 @@ set -ouex pipefail
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y tmux 
+dnf5 install -y tmux rclone android-tools nmap jotta-cli 
 
 # Use a COPR Example:
 #
