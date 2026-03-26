@@ -21,7 +21,7 @@ EOF
 # https://mirrors.rpmfusion.org/mirrorlist?path=free/fedora/updates/43/x86_64/repoview/index.html&protocol=https&redirect=1
 
 # this installs a package from fedora repos
-dnf5 install -y tmux rclone android-tools nmap jotta-cli 
+dnf5 install -y android-tools jotta-cli 
 
 # Use a COPR Example:
 #
