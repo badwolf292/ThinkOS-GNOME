@@ -11,4 +11,3 @@ then run this command: ```sudo bootc switch ghcr.io/badwolf292/thinkos-gnome```
 The current extra packages I have added are:
 - android-tools (adb)
 - jotta-cli (CLI tool for Jottacloud)
-- nmap
